@@ -1,0 +1,175 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --concealment: #405952;
+    --sage: #9C9B7A;
+    --yellow: #FFD393;
+    --orange: #FF974F;
+    --glow: #F54F29;
+    --font-size: 1.3rem;
+    --mono: "Playfair Display", serif;
+    --sans: "Lato", sans-serif;
+  }
+  
+  html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--yellow);
+    color: var(--sage);
+    font-size: var(--font-size);
+  }
+  h1, h2, h3 {
+    margin: 0;
+  }
+  a {
+    color: var(--concealment);
+  }
+  a:hover {
+    color: var(--glow);
+    text-decoration: none;
+  }
+  
+  /* intro styles */
+  
+  #intro {
+    padding-bottom: 10rem;
+  }
+  #intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  #intro .name {
+    font-family: var(--sans);
+  }
+  .name span {
+    font-family: var(--mono);
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--concealment);
+    display: block;
+  }
+  #intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: var(--mono);
+    font-weight: bold;
+    color: var(--orange)
+  }
+  
+  /* contact section */
+  .section {
+    background-color: var(--sage);
+  }
+  #contact {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  #contact p {
+    color: var(--yellow);
+  }
+  #contact p:last-child {
+    margin-top: 3rem;
+  }
+  #contact h2{
+    font-family: var(--mono);
+    font-weight: bold;
+    color: var(--orange);
+  }
+   /* navbar */
+  
+  nav {
+    font-family: var(--sans);
+    font-size: 80%;
+    padding: 1rem;
+  }
+  
+  nav h1 a {
+    font-family: var(--mono);
+    font-weight: bold;
+  }
+  
+  nav h1 a [class*="fa-"] {
+    font-size: 100%;
+    color: var(--sage);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--sage);
+  }
+  
+  nav a {
+    color: var(--concealment);
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover, 
+  nav [class*="fa-"]:hover {
+    color: var(--glow);
+  }
+  
+  .button {
+    background-color: var(--orange);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--concealment);
+  }
+  
+  .button:hover {
+    color: var(--concealment);
+    background-color: var(--glow);
+  }
+  
+  /* footer section */
+  footer {
+      text-align: center;
+  }
+  footer ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 2rem 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 3rem;
+      font-size: 3rem;
+  }
+  
+  @media (min-width: 850px){
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
