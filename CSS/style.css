@@ -40,7 +40,9 @@
   /* intro styles */
   
   #intro {
-    padding-bottom: 10rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   #intro p {
     font-size: 1rem;
@@ -83,7 +85,7 @@
   #contact h2{
     font-family: var(--mono);
     font-weight: bold;
-    color: var(--orange);
+    color: var(--concealment);
   }
    /* navbar */
   
@@ -140,6 +142,8 @@
     padding: 0.5rem;
     border-radius: 5px;
     color: var(--concealment);
+    font-family: var(--mono);
+    text-decoration: none;
   }
   
   .button:hover {
@@ -150,6 +154,7 @@
   /* footer section */
   footer {
       text-align: center;
+      padding: 4rem 0;
   }
   footer ul {
       list-style-type: none;
