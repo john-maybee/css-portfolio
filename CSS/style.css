@@ -284,6 +284,10 @@ article {
   justify-content: flex-start;
 }
 
+#self {
+  max-width: 280px;
+}
+
 @media (min-width: 850px){
   nav {
     max-width: 1200px;
